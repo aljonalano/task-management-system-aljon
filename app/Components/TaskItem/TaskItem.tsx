@@ -48,7 +48,7 @@ function TaskItem({ title, description, date, isCompleted, id }: Props) {
               updateTask(task);
             }}
           >
-            Todo
+            {title === "Todo" ? "Todo" : "In Progress"}
           </button>
         )}
         <button className="edit" onClick={openModal}>

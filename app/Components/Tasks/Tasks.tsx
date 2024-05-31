@@ -14,7 +14,6 @@ interface Props {
 
 function Tasks({ title, tasks }: Props) {
   const { theme, isLoading, openModal, modal } = useGlobalState();
-  console.log("tasks", tasks);
   return (
     <TaskStyled theme={theme}>
       {modal && <Modal content={<CreateContent />} />}
